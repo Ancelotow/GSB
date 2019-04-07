@@ -1,0 +1,22 @@
+{% extends ":Visiteur:base.html.twig" %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            <h3>Liste des Etats</h3><br/>
+            <table class="table table-dark table-hover">
+                <tr>
+                    <th><center>Identifiant</center></th>
+                    <th><center>Libellé</center></th>
+                </tr>
+                {% for unEtat in etats %}
+                    <tr>
+                        <td><center>{{ unEtat.id }}</center></td>
+                        <td><center>{{ unEtat.libelle }}</center></td>
+                    </tr>
+                {% endfor %}
+            </table><br/>
+        </div>
+    </center>
+
+{% endblock %}

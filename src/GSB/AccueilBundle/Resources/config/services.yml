@@ -1,0 +1,4 @@
+services:
+#    gsb_accueil.example:
+#        class: GSB\AccueilBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

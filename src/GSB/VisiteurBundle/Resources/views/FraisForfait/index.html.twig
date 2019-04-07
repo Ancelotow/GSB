@@ -1,0 +1,25 @@
+{% extends ":Visiteur:base.html.twig" %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            <h3>Liste des Frais Forfaits</h3><br/>
+            <table class="table table-dark table-hover">
+                <tr>
+                    <th>Libelle</th>
+                    <th>Montant</th>
+                    <th>Modifier</th>
+                </tr>
+                {% for unFF in ff %}
+                    <tr>
+                        <td>{{ unFF.libelle }}</td>
+                        <td>{{ unFF.montant }} €</td>
+                        <td><a href="/visiteur/frais_forfait/modifier/{{ unFF.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
+                    </tr>
+                {% endfor %}
+            </table><br/>
+            <a href="/visiteur/frais_forfait/ajouter" class="btn btn-outline-light">AJOUTER NOUVELLE<br/>FRAIS FORFAIT</a><br/>
+        </div>
+    </center>
+
+{% endblock %}

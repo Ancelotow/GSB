@@ -1,0 +1,31 @@
+{% extends ":Visiteur:base.html.twig" %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            <h3>Liste des Fiche Frais</h3><br/>
+            <table class="table table-dark table-hover">
+                <tr>
+                    <th>Mois</th>
+                    <th>Nombre de Justificatifs</th>
+                    <th>Montant valide</th>
+                    <th>Etat</th>
+                    <th>Date de la Notifications</th>
+                    <th>Modifier</th>
+                </tr>
+                {% for unFF in ff %}
+                    <tr>
+                        <td>{{ mois[unFF.mois - 1] }}</td>
+                        <td>{{ unFF.nbJustificatifs }}</td>
+                        <td>{{ unFF.montantValide }} €</td>
+                        <td>{{ unFF.LeEtat }}</td>
+                        <td>{{ unFF.dateNotif|date('d/m/Y') }}</td>
+                        <td><a href="/visiteur/fiche_frais/modifier/{{ unFF.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
+                    </tr>
+                {% endfor %}
+            </table><br/>
+            <a href="/visiteur/fiche_frais/ajouter" class="btn btn-outline-light">AJOUTER NOUVELLE<br/>FICHE FRAIS</a><br/>
+        </div>
+    </center>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+gsb_accueil_accueil1:
+    path:     /
+    defaults: { _controller: GSBAccueilBundle:Default:index }
+
+gsb_accueil_connexion1:
+    path:     /connexion/comptable
+    defaults: { _controller: GSBAccueilBundle:Default:comptable }

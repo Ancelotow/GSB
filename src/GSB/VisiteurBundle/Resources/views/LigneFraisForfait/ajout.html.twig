@@ -1,0 +1,34 @@
+{% extends ":Visiteur:base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Formulaire d'ajout de Ligne Frais Forfait</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-group col-md-12">
+                {{ form_label(form.ficheFrais) }}
+                {{ form_errors(form.ficheFrais) }}
+                {{ form_widget(form.ficheFrais, {'attr' : {'class' : 'form-control' }}) }}
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.fraisForfais) }}
+                    {{ form_errors(form.fraisForfais) }}
+                    {{ form_widget(form.fraisForfais) }}
+                </div>
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.quantite) }}
+                    {{ form_errors(form.quantite) }}
+                    {{ form_widget(form.quantite) }}
+                </div>
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}

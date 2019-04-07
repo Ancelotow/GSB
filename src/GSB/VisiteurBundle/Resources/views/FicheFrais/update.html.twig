@@ -1,0 +1,49 @@
+{% extends ":Visiteur:base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Formulaire d'ajout de fiche frais</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.idvisiteur) }}
+                    {{ form_errors(form.idvisiteur) }}
+                    {{ form_widget(form.idvisiteur, {'attr' : {'class' : 'form-control', 'placeholder' : ff.LeVisiteur }}) }}
+                </div>
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.mois) }} {{ ff.mois }}
+                    {{ form_errors(form.mois) }}
+                    {{ form_widget(form.mois, {'attr' : {'class' : 'form-control' }}) }}
+                </div>
+            </div><br/>
+            <div class="form-row">
+                <div class="col-md-3 mb-6">
+                    {{ form_label(form.nbJustificatifs) }}
+                    {{ form_errors(form.nbJustificatifs) }}
+                    {{ form_widget(form.nbJustificatifs, {'attr' : {'class' : 'form-control', 'placeholder' : ff.nbJustificatifs }}) }}
+                </div>
+                <div class="col-md-3 mb-6">
+                    {{ form_label(form.montantValide) }}
+                    {{ form_errors(form.montantValide) }}
+                    {{ form_widget(form.montantValide, {'attr' : {'class' : 'form-control', 'placeholder' : ff.montantValide }}) }}
+                </div>
+                <div class="col-md-3 mb-6">
+                    {{ form_label(form.etat) }}
+                    {{ form_errors(form.etat) }}
+                    {{ form_widget(form.etat, {'attr' : {'class' : 'form-control', 'placeholder' : ff.LeEtat }}) }}
+                </div>
+                <div class="col-md-3 mb-6">
+                    {{ form_label(form.dateNotif) }} {{ ff.dateNotif|date('d/m/Y') }}
+                    {{ form_errors(form.dateNotif) }}
+                    {{ form_widget(form.dateNotif) }}
+                </div>
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            <form action="{{ path("fos_user_security_check") }}" method="post">
+                <h3>RV-VISITEUR</h3><br/>
+                {% if error %}
+                    <div class="alert alert-danger" role="alert" >{{ "Identifiant ou mot de passe invalide."|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+                {% if csrf_token %}
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                {% endif %}
+                <div class="col-md-6 mb-3">
+                    <label for="username">{{ 'Identifiant'|trans }}</label><br/>
+                    <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" />
+                </div><br/>
+                <div class="col-md-6 mb-3">
+                    <label for="password">{{ 'Mot de passe'|trans }}</label><br/>
+                    <input type="password" class="form-control" id="password" name="_password" required="required" autocomplete="current-password" />
+                </div><br/>
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                <label for="remember_me">{{ 'Se rappeler de moi'|trans }}</label><br/>
+
+                <input type="submit" class="btn btn-outline-success" id="_submit" name="_submit" value="{{ 'Connexion'|trans }}" />
+            </form><br/>
+            <a href="/" class="btn btn-outline-dark">Retour</a>
+        </div>
+    </center>
+{% endblock %}

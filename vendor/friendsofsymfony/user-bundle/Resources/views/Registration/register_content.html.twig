@@ -1,0 +1,30 @@
+{% extends "::base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <div class="container">
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+        <h3>Enregistrement (1/2)</h3><br/>
+        {{ form_errors(form) }}
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.email) }}
+                {{ form_errors(form.email) }}
+                {{ form_widget(form.email, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.username) }}
+                {{ form_errors(form.username) }}
+                {{ form_widget(form.username, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_rest(form, {'attr' : {'placeholder' : 'Identifiant', 'class' : 'form-control'}}) }}
+            </div><br/>
+            <div>
+                <input type="submit" class="btn btn-outline-success" value="{{ "Continuer"|trans }}" />
+            </div><br/>
+        {{ form_end(form) }}
+        <a href="/" class="btn btn-outline-dark">Retour</a><br/>
+        </div>
+    </center>
+{% endblock %}

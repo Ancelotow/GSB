@@ -1,0 +1,67 @@
+{% block session %}{% endblock %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}GSB{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/bootstrap-grid.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/bootstrap-reboot.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/gsb.css') }}" rel="stylesheet" />
+        {% endblock %}
+        {% block script %}
+            <script src="{{ asset('js/slim.min.js') }}"  ></script>
+            <script src="{{ asset('js/poppers.min.js') }}" ></script>
+            <script src="{{ asset('js/bootstrap2.min.js') }}" ></script>
+        {% endblock %}
+        {% block icnon %}<link rel="icon" type="image/x-icon" href="{{ asset('img/gsb.gif') }}" />{% endblock %}
+    </head>
+    <body>
+    {% block menu %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <a class="navbar-brand" href="/visiteur/">GSB-VISITEUR</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ETAT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/visiteur/etat">LISTER</a>
+                            <a class="dropdown-item" href="/visiteur/etat/ajouter">AJOUTER</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FICHE FRAIS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/visiteur/fiche_frais">LISTER</a>
+                            <a class="dropdown-item" href="/visiteur/fiche_frais/rechercher/mois">CONSULTER PAR MOIS</a>
+                            <a class="dropdown-item" href="/visiteur/fiche_frais/ajouter">AJOUTER</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/visiteur/ligne_frais_forfait">CONSULTER LIGNE FRAIS FORFAIT</a>
+                            <a class="dropdown-item" href="/visiteur/ligne_frais_hors_forfait">CONSULTER LIGNE FRAIS HORS FORFAIT</a>
+                            <a class="dropdown-item" href="/visiteur/frais_forfait">CONSULTER FRAIS FORFAIT</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/visiteur/ligne_frais_forfait/ajouter">AJOUTER LIGNE FRAIS FORFAIT</a>
+                            <a class="dropdown-item" href="/visiteur/ligne_frais_hors_forfait/ajouter">AJOUTER LIGNE FRAIS HORS FORFAIT</a>
+                            <a class="dropdown-item" href="/visiteur/frais_forfait/ajouter">AJOUTER FRAIS FORFAIT</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">{{ app.user.username|upper }}</a>
+                    </li>
+                </ul>
+                <a href="/deconnexion" class="btn btn-outline-danger">Déconnexion</a>
+            </div>
+        </nav><br/>
+    {% endblock %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

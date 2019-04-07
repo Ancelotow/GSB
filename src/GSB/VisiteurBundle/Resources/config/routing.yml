@@ -1,0 +1,81 @@
+gsb_visiteur_home1:
+  path:     /visiteur/
+  defaults: { _controller: GSBVisiteurBundle:Default:index }
+
+gsb_visiteur_deconnexion:
+  path:     /deconnexion
+  defaults: { _controller: GSBVisiteurBundle:Default:deconnexion }
+
+gsb_visiteur_etat-add:
+  path:     /visiteur/etat/ajouter
+  defaults: { _controller: GSBVisiteurBundle:Etat:add }
+
+gsb_visiteur_etat-register:
+  path:     /visiteur/etat/ajouter/register
+  defaults: { _controller: GSBVisiteurBundle:Etat:register }
+
+gsb_visiteur_etat-index:
+  path:     /visiteur/etat
+  defaults: { _controller: GSBVisiteurBundle:Etat:index }
+
+gsb_visiteur_frait_forfait-add:
+  path:     /visiteur/frais_forfait/ajouter
+  defaults: { _controller: GSBVisiteurBundle:FraisForfait:add }
+
+gsb_visiteur_frais_forfait-register:
+  path:     /visiteur/frais_forfait/ajouter/register
+  defaults: { _controller: GSBVisiteurBundle:FraisForfait:register }
+
+gsb_visiteur_frais_forfait-index:
+  path:     /visiteur/frais_forfait
+  defaults: { _controller: GSBVisiteurBundle:FraisForfait:index }
+
+gsb_visiteur_fiche_frais-add:
+  path:     /visiteur/fiche_frais/ajouter
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:add }
+
+gsb_visiteur_fiche_frais-listMois:
+  path:     /visiteur/fiche_frais/lister/mois/{mois}
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:listMois }
+
+gsb_visiteur_fiche_frais-register:
+  path:     /visiteur/fiche_frais/ajouter/register
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:register }
+
+gsb_visiteur_fiche_frais-index:
+  path:     /visiteur/fiche_frais
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:index }
+
+gsb_visiteur_fiche_frais-update:
+  path:     /visiteur/fiche_frais/modifier/{id}
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:update }
+
+gsb_visiteur_fiche_frais-selectMois:
+  path:     /visiteur/fiche_frais/rechercher/mois
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:selectMois }
+
+gsb_visiteur_ligne_frais_hors_forfait-add:
+  path:     /visiteur/ligne_frais_hors_forfait/ajouter
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:add }
+
+gsb_visiteur_ligne_frais_hors_forfait-register:
+  path:     /visiteur/ligne_frais_hors_forfait/ajouter/register
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:register }
+
+gsb_visiteur_ligne_frais_hors_forfait-index:
+  path:     /visiteur/ligne_frais_hors_forfait
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:index }
+
+gsb_visiteur_ligne_frais_forfait-add:
+  path:     /visiteur/ligne_frais_forfait/ajouter
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisForfait:add }
+
+gsb_visiteur_ligne_frais_forfait-index:
+  path:     /visiteur/ligne_frais_forfait
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisForfait:index }
+
+gsb_visiteur_ligne_frais_forfait-register:
+  path:     /visiteur/ligne_frais_forfait/ajouter/register
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisForfait:register }
+
+

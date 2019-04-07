@@ -1,0 +1,20 @@
+{% extends ":Visiteur:base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Formulaire d'ajout d'état</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-group col-md-3">
+                {{ form_label(form.libelle) }}
+                {{ form_errors(form.libelle) }}
+                {{ form_widget(form.libelle, {'attr' : {'class' : 'form-control', 'placeholder' : "Libelle de l'état" }}) }}
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}

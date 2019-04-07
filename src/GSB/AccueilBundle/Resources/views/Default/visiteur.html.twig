@@ -1,0 +1,47 @@
+{% extends"::base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form, {'method': 'post'}) }}
+            <h3>Enregistrement (2/2)</h3><br/>
+            {{ form_errors(form) }}
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.nom) }}
+                {{ form_errors(form.nom) }}
+                {{ form_widget(form.nom, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.prenom) }}
+                {{ form_errors(form.prenom) }}
+                {{ form_widget(form.prenom, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.adresse) }}
+                {{ form_errors(form.adresse) }}
+                {{ form_widget(form.adresse, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.ville) }}
+                {{ form_errors(form.ville) }}
+                {{ form_widget(form.ville, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.cp) }}
+                {{ form_errors(form.cp) }}
+                {{ form_widget(form.cp, {'attr' : {'class' : 'form-control'}}) }}
+            </div><br/>
+            <div class="col-md-6 mb-3">
+                {{ form_label(form.date_embauche) }}
+                {{ form_errors(form.date_embauche) }}
+                {{ form_widget(form.date_embauche) }}
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+            {{ form_end(form) }}
+            <a href="/" class="btn btn-outline-danger">Annuler</a><br/>
+        </div>
+    </center>
+{% endblock %}

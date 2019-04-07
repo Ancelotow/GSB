@@ -1,0 +1,7 @@
+{% extends':Visiteur:base.html.twig' %}
+
+{% block body %}
+    <center>
+        <h3>Bienvenue sur notre espace Visiteur {{ app.session.get('nomVisiteur')|upper }} {{ app.session.get('prenomVisiteur') }}</h3>
+    </center>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends ":Visiteur:base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Formulaire d'ajout de fiche frais</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.mois) }}
+                    {{ form_errors(form.mois) }}
+                    {{ form_widget(form.mois, {'attr' : {'class' : 'form-control' }}) }}
+                </div>
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.nbJustificatifs) }}
+                    {{ form_errors(form.nbJustificatifs) }}
+                    {{ form_widget(form.nbJustificatifs, {'attr' : {'class' : 'form-control', 'placeholder' : 'Nombre de justificatifs' }}) }}
+                </div>
+            </div><br/>
+            <div class="form-row">
+                <div class="col-md-4 mb-6">
+                    {{ form_label(form.montantValide) }}
+                    {{ form_errors(form.montantValide) }}
+                    {{ form_widget(form.montantValide, {'attr' : {'class' : 'form-control', 'placeholder' : 'Montant Valide' }}) }}
+                </div>
+                <div class="col-md-4 mb-6">
+                    {{ form_label(form.etat) }}
+                    {{ form_errors(form.etat) }}
+                    {{ form_widget(form.etat, {'attr' : {'class' : 'form-control', 'placeholder' : 'Etat ' }}) }}
+                </div>
+                <div class="col-md-4 mb-6">
+                    {{ form_label(form.dateNotif) }}
+                    {{ form_errors(form.dateNotif) }}
+                    {{ form_widget(form.dateNotif) }}
+                </div>
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}
