@@ -1335,3 +1335,9 @@ bc9eee,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725076,,4
 bbf304,127.0.0.1,GET,http://localhost:8000/visiteur/frais_forfait/ajouter,1556725088,,200
 2f5515,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725091,775e91,200
 775e91,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725091,,404
+e40160,127.0.0.1,GET,http://localhost:8000/visiteur/frais_forfait/ajouter,1556725287,,200
+ca1968,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725289,e25021,200
+e25021,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725289,,404
+368adb,127.0.0.1,GET,http://localhost:8000/visiteur/etat,1556725291,,200
+b41c2b,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725293,78e2e6,200
+78e2e6,127.0.0.1,GET,http://localhost:8000/css/imgs/FONDGLOBAL.jpg,1556725294,,404
