@@ -8,13 +8,11 @@
                 <tr>
                     <th>Libelle</th>
                     <th>Montant</th>
-                    <th>Modifier</th>
                 </tr>
                 {% for unFF in ff %}
                     <tr>
                         <td>{{ unFF.libelle }}</td>
                         <td>{{ unFF.montant }} €</td>
-                        <td><a href="/visiteur/frais_forfait/modifier/{{ unFF.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>
