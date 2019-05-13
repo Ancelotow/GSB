@@ -30,4 +30,16 @@ class ligne_frais_forfaitRepository extends \Doctrine\ORM\EntityRepository
         return $result;
     }
 
+    public function getUnLFF($id)
+    {
+        $qb = $this->_em->createQueryBuilder();
+        $qb->select('lff')
+            ->from('GSBVisiteurBundle:ligne_frais_forfait', 'lff')
+            ->where('lff.id = :id')
+            ->setParameter('id', $id);
+        $query = $qb->getQuery();
+        $result = $query->getOneOrNullResult();
+        return $result;
+    }
+
 }

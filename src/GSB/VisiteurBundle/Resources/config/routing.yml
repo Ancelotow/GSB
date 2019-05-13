@@ -78,4 +78,8 @@ gsb_visiteur_ligne_frais_forfait-register:
   path:     /visiteur/ligne_frais_forfait/ajouter/register
   defaults: { _controller: GSBVisiteurBundle:LigneFraisForfait:register }
 
+gsb_visiteur_ligne_frais_forfait-update:
+  path:     /visiteur/ligne_frais_forfait/modifier/{id}
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisForfait:update }
+
 

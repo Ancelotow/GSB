@@ -10,7 +10,6 @@
                     <th>Montant valide</th>
                     <th>Etat</th>
                     <th>Date de la Notifications</th>
-                    <th>Modifier</th>
                 </tr>
                 {% for unFF in ff %}
                     <tr>
@@ -18,7 +17,6 @@
                         <td>{{ unFF.montantValide }} €</td>
                         <td>{{ unFF.LeEtat }}</td>
                         <td>{{ unFF.dateNotif|date('d/m/Y') }}</td>
-                        <td><a href="/visiteur/fiche_frais/modifier/{{ unFF.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>

@@ -9,12 +9,14 @@
                     <th>Fiche frais</th>
                     <th>Frais forfait</th>
                     <th>Quantite</th>
+                    <th>Modifier</th>
                 </tr>
                 {% for unLFF in lff %}
                     <tr>
                         <td>{{ unLFF.ficheFrais.FF }}</td>
                         <td>{{ unLFF.fraisForfais.libelle }}</td>
                         <td>{{ unLFF.quantite }}</td>
+                        <td><a href="/visiteur/ligne_frais_forfait/modifier/{{ unLFF.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>

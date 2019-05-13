@@ -270,6 +270,11 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::registerAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-register',);
                     }
 
+                    // gsb_visiteur_ligne_frais_forfait-update
+                    if (0 === strpos($pathinfo, '/visiteur/ligne_frais_forfait/modifier') && preg_match('#^/visiteur/ligne_frais_forfait/modifier/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_forfait-update')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::updateAction',));
+                    }
+
                 }
 
             }
