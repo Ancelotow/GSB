@@ -46,10 +46,6 @@ gsb_visiteur_fiche_frais-index:
   path:     /visiteur/fiche_frais
   defaults: { _controller: GSBVisiteurBundle:FicheFrais:index }
 
-gsb_visiteur_fiche_frais-update:
-  path:     /visiteur/fiche_frais/modifier/{id}
-  defaults: { _controller: GSBVisiteurBundle:FicheFrais:update }
-
 gsb_visiteur_fiche_frais-selectMois:
   path:     /visiteur/fiche_frais/rechercher/mois
   defaults: { _controller: GSBVisiteurBundle:FicheFrais:selectMois }
@@ -65,6 +61,18 @@ gsb_visiteur_ligne_frais_hors_forfait-register:
 gsb_visiteur_ligne_frais_hors_forfait-index:
   path:     /visiteur/ligne_frais_hors_forfait
   defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:index }
+
+gsb_visiteur_ligne_frais_hors_forfait-update:
+  path:     /visiteur/ligne_frais_hors_forfait/modifier/{id}
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:update }
+
+gsb_visiteur_ligne_frais_hors_forfait-delete_verif:
+  path:     /visiteur/ligne_frais_hors_forfait/supprimer/verif/{id}
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:deleteVerif }
+
+gsb_visiteur_ligne_frais_hors_forfait-delete:
+  path:     /visiteur/ligne_frais_hors_forfait/supprimer/{id}
+  defaults: { _controller: GSBVisiteurBundle:LigneFraisHorsForfait:delete }
 
 gsb_visiteur_ligne_frais_forfait-add:
   path:     /visiteur/ligne_frais_forfait/ajouter

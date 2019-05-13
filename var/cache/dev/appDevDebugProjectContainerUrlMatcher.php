@@ -221,11 +221,6 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                         return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::indexAction',  '_route' => 'gsb_visiteur_fiche_frais-index',);
                     }
 
-                    // gsb_visiteur_fiche_frais-update
-                    if (0 === strpos($pathinfo, '/visiteur/fiche_frais/modifier') && preg_match('#^/visiteur/fiche_frais/modifier/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_fiche_frais-update')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::updateAction',));
-                    }
-
                     // gsb_visiteur_fiche_frais-selectMois
                     if ('/visiteur/fiche_frais/rechercher/mois' === $pathinfo) {
                         return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::selectMoisAction',  '_route' => 'gsb_visiteur_fiche_frais-selectMois',);
@@ -235,7 +230,7 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
             }
 
-            elseif (0 === strpos($pathinfo, '/visiteur/ligne_frais_')) {
+            elseif (0 === strpos($pathinfo, '/visiteur/ligne_frais_hors_forfait')) {
                 if (0 === strpos($pathinfo, '/visiteur/ligne_frais_hors_forfait/ajouter')) {
                     // gsb_visiteur_ligne_frais_hors_forfait-add
                     if ('/visiteur/ligne_frais_hors_forfait/ajouter' === $pathinfo) {
@@ -254,27 +249,45 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisHorsForfaitController::indexAction',  '_route' => 'gsb_visiteur_ligne_frais_hors_forfait-index',);
                 }
 
-                if (0 === strpos($pathinfo, '/visiteur/ligne_frais_forfait')) {
-                    // gsb_visiteur_ligne_frais_forfait-add
-                    if ('/visiteur/ligne_frais_forfait/ajouter' === $pathinfo) {
-                        return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::addAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-add',);
+                // gsb_visiteur_ligne_frais_hors_forfait-update
+                if (0 === strpos($pathinfo, '/visiteur/ligne_frais_hors_forfait/modifier') && preg_match('#^/visiteur/ligne_frais_hors_forfait/modifier/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_hors_forfait-update')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisHorsForfaitController::updateAction',));
+                }
+
+                if (0 === strpos($pathinfo, '/visiteur/ligne_frais_hors_forfait/supprimer')) {
+                    // gsb_visiteur_ligne_frais_hors_forfait-delete_verif
+                    if (0 === strpos($pathinfo, '/visiteur/ligne_frais_hors_forfait/supprimer/verif') && preg_match('#^/visiteur/ligne_frais_hors_forfait/supprimer/verif/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_hors_forfait-delete_verif')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisHorsForfaitController::deleteVerifAction',));
                     }
 
-                    // gsb_visiteur_ligne_frais_forfait-index
-                    if ('/visiteur/ligne_frais_forfait' === $pathinfo) {
-                        return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::indexAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-index',);
+                    // gsb_visiteur_ligne_frais_hors_forfait-delete
+                    if (preg_match('#^/visiteur/ligne_frais_hors_forfait/supprimer/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_hors_forfait-delete')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisHorsForfaitController::deleteAction',));
                     }
 
-                    // gsb_visiteur_ligne_frais_forfait-register
-                    if ('/visiteur/ligne_frais_forfait/ajouter/register' === $pathinfo) {
-                        return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::registerAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-register',);
-                    }
+                }
 
-                    // gsb_visiteur_ligne_frais_forfait-update
-                    if (0 === strpos($pathinfo, '/visiteur/ligne_frais_forfait/modifier') && preg_match('#^/visiteur/ligne_frais_forfait/modifier/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_forfait-update')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::updateAction',));
-                    }
+            }
 
+            elseif (0 === strpos($pathinfo, '/visiteur/ligne_frais_forfait')) {
+                // gsb_visiteur_ligne_frais_forfait-add
+                if ('/visiteur/ligne_frais_forfait/ajouter' === $pathinfo) {
+                    return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::addAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-add',);
+                }
+
+                // gsb_visiteur_ligne_frais_forfait-index
+                if ('/visiteur/ligne_frais_forfait' === $pathinfo) {
+                    return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::indexAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-index',);
+                }
+
+                // gsb_visiteur_ligne_frais_forfait-register
+                if ('/visiteur/ligne_frais_forfait/ajouter/register' === $pathinfo) {
+                    return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::registerAction',  '_route' => 'gsb_visiteur_ligne_frais_forfait-register',);
+                }
+
+                // gsb_visiteur_ligne_frais_forfait-update
+                if (0 === strpos($pathinfo, '/visiteur/ligne_frais_forfait/modifier') && preg_match('#^/visiteur/ligne_frais_forfait/modifier/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_ligne_frais_forfait-update')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\LigneFraisForfaitController::updateAction',));
                 }
 
             }

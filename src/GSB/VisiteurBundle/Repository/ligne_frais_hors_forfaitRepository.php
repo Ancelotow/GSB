@@ -29,4 +29,16 @@ class ligne_frais_hors_forfaitRepository extends \Doctrine\ORM\EntityRepository
         return $result;
     }
 
+    public function getUnLFHF($id)
+    {
+        $qb = $this->_em->createQueryBuilder();
+        $qb->select('lfhf')
+            ->from('GSBVisiteurBundle:ligne_frais_hors_forfait', 'lfhf')
+            ->where('lfhf.id = :id')
+            ->setParameter('id', $id);
+        $query = $qb->getQuery();
+        $result = $query->getOneOrNullResult();
+        return $result;
+    }
+
 }

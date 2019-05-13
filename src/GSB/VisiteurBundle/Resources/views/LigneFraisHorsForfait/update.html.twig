@@ -1,0 +1,41 @@
+{% extends ":Visiteur:base.html.twig" %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Formulaire de modification de Ligne Frais Hors Forfait</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.ficheFrais) }}
+                    {{ form_errors(form.ficheFrais) }}
+                    {{ form_widget(form.ficheFrais, {'attr' : {'class' : 'form-control' }}) }}
+                </div>
+                <div class="col-md-2,5 mb-6">
+                    {{ form_label(form.date) }}
+                    {{ form_errors(form.date) }}
+                    {{ form_widget(form.date) }}
+                </div>
+            </div><br/>
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.montant) }}
+                    {{ form_errors(form.montant) }}
+                    {{ form_widget(form.montant, {value : lfhf.montant, 'attr' : {'class' : 'form-control', 'placeholder' : 'Votre montant' }}) }}
+                </div>
+                <div class="col-md-6 mb-6">
+                    {{ form_label(form.libelle) }}
+                    {{ form_errors(form.libelle) }}
+                    {{ form_widget(form.libelle, {value : lfhf.libelle, 'attr' : {'class' : 'form-control', 'placeholder' : 'Votre libelle' }}) }}
+                </div>
+            </div><br/>
+            {{ form_widget(form.valid, {'label': 'MODIFIER', 'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}
