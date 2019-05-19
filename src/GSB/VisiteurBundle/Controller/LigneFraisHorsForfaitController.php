@@ -58,5 +58,18 @@ class LigneFraisHorsForfaitController extends Controller
             'lfhf'=>$ligne_frais_hors_forfait
         ));
     }
+    
+    public function deleteVerifAction(Session $session, $id){
+        $lfhf = $this->getDoctrine()->getManager()->getRepository('GSBVisiteurBundle:ligne_frais_hors_forfait')->getUnLFHF($id);
+        return $this->render('GSBVisiteurBundle:LigneFraisHorsForfait:delete.html.twig', array('lfhf'=>$lfhf));
+    }
+
+    public function deleteAction(Session $session, $id){
+        $lfhf = $this->getDoctrine()->getManager()->getRepository('GSBVisiteurBundle:ligne_frais_hors_forfait')->getUnLFHF($id);
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($lfhf);
+        $em->flush();
+        return $this->redirectToRoute('gsb_visiteur_ligne_frais_hors_forfait-index');
+    }
 
 }
