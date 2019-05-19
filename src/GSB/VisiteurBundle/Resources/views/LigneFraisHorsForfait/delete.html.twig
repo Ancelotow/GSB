@@ -1,0 +1,10 @@
+{% extends ":Visiteur:base.html.twig" %}
+
+{% block body %}
+    <center>
+        <h3>Suppression de la Ligne Frais Hors Forfait</h3><br/>
+        <p>Êtes-vous sûre de vouloir supprimer la ligne numéro {{ lfhf.id }} et de libelle {{ lfhf.libelle }} ?</p><br/>
+        <a href="/visiteur/ligne_frais_hors_forfait" class="btn btn-outline-success">NON</a>
+        <a href="/visiteur/ligne_frais_hors_forfait/supprimer/{{ lfhf.id }}" class="btn btn-outline-danger">OUI</a>
+    </center>
+{% endblock %}
