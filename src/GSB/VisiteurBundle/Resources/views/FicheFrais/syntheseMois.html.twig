@@ -1,0 +1,19 @@
+{% extends ":Visiteur:base.html.twig" %}
+
+{% block body %}
+    <center>
+        <div class="container">
+            {{ form_start(form) }}
+            <h3>Selectionnez le mois pour la synthese</h3><br/>
+            {{ form_errors(form) }}
+            <div class="form-group col-md-3">
+                {{ form_label(form.mois) }}
+                {{ form_errors(form.mois) }}
+                {{ form_widget(form.mois, {'attr' : {'class' : 'form-control' }}) }}
+            </div><br/>
+            {{ form_widget(form.valid, {'attr' : {'class' : 'btn btn-outline-success'}}) }}
+            {{ form_widget(form._token) }}
+            {{ form_rest(form) }}
+        </div>
+    </center>
+{% endblock %}

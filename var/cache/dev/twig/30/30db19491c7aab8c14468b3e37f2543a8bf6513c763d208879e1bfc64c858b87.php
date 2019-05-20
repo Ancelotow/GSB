@@ -21,29 +21,29 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_c321524ed106a19ef8057e8aa6f169f837c7314d93219b79fba0c7a70e24716f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_c321524ed106a19ef8057e8aa6f169f837c7314d93219b79fba0c7a70e24716f->enter($__internal_c321524ed106a19ef8057e8aa6f169f837c7314d93219b79fba0c7a70e24716f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:listMois.html.twig"));
+        $__internal_280eee576da2ed2d138f3e1404a6ee43dab90dd17c31c1e77e74c9e8d89d9d2c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_280eee576da2ed2d138f3e1404a6ee43dab90dd17c31c1e77e74c9e8d89d9d2c->enter($__internal_280eee576da2ed2d138f3e1404a6ee43dab90dd17c31c1e77e74c9e8d89d9d2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:listMois.html.twig"));
 
-        $__internal_3fdd955e20c6ee04d4a4af25e17da1ea03280021e743e0c24425e0ae54002de0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_3fdd955e20c6ee04d4a4af25e17da1ea03280021e743e0c24425e0ae54002de0->enter($__internal_3fdd955e20c6ee04d4a4af25e17da1ea03280021e743e0c24425e0ae54002de0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:listMois.html.twig"));
+        $__internal_46a57f3fca6c86aebee1a01038cb3b2c2453e74c8eb3045cda86677c80a82304 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_46a57f3fca6c86aebee1a01038cb3b2c2453e74c8eb3045cda86677c80a82304->enter($__internal_46a57f3fca6c86aebee1a01038cb3b2c2453e74c8eb3045cda86677c80a82304_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:listMois.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_c321524ed106a19ef8057e8aa6f169f837c7314d93219b79fba0c7a70e24716f->leave($__internal_c321524ed106a19ef8057e8aa6f169f837c7314d93219b79fba0c7a70e24716f_prof);
+        $__internal_280eee576da2ed2d138f3e1404a6ee43dab90dd17c31c1e77e74c9e8d89d9d2c->leave($__internal_280eee576da2ed2d138f3e1404a6ee43dab90dd17c31c1e77e74c9e8d89d9d2c_prof);
 
         
-        $__internal_3fdd955e20c6ee04d4a4af25e17da1ea03280021e743e0c24425e0ae54002de0->leave($__internal_3fdd955e20c6ee04d4a4af25e17da1ea03280021e743e0c24425e0ae54002de0_prof);
+        $__internal_46a57f3fca6c86aebee1a01038cb3b2c2453e74c8eb3045cda86677c80a82304->leave($__internal_46a57f3fca6c86aebee1a01038cb3b2c2453e74c8eb3045cda86677c80a82304_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_41ae03f6f47ba258621d8560346842d646d438388e3095b4baa331f495b4b67d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_41ae03f6f47ba258621d8560346842d646d438388e3095b4baa331f495b4b67d->enter($__internal_41ae03f6f47ba258621d8560346842d646d438388e3095b4baa331f495b4b67d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_d90ee121b7c0add29c94b9913a3713f6e785866a32f9b8847122c45c6cca97aa = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_d90ee121b7c0add29c94b9913a3713f6e785866a32f9b8847122c45c6cca97aa->enter($__internal_d90ee121b7c0add29c94b9913a3713f6e785866a32f9b8847122c45c6cca97aa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_65c2a05553d24dda698882d2f412866d4a084476418334c21958e6f9e080c175 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_65c2a05553d24dda698882d2f412866d4a084476418334c21958e6f9e080c175->enter($__internal_65c2a05553d24dda698882d2f412866d4a084476418334c21958e6f9e080c175_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_46951651f3a91aa64493b29f994db3bb84c59c37e75872f27c7092a8ddaa581d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_46951651f3a91aa64493b29f994db3bb84c59c37e75872f27c7092a8ddaa581d->enter($__internal_46951651f3a91aa64493b29f994db3bb84c59c37e75872f27c7092a8ddaa581d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <center>
@@ -58,42 +58,37 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
                     <th>Montant valide</th>
                     <th>Etat</th>
                     <th>Date de la Notifications</th>
-                    <th>Modifier</th>
                 </tr>
                 ";
-        // line 15
+        // line 14
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["ff"] ?? $this->getContext($context, "ff")));
         foreach ($context['_seq'] as $context["_key"] => $context["unFF"]) {
-            // line 16
+            // line 15
             echo "                    <tr>
                         <td>";
-            // line 17
+            // line 16
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "nbJustificatifs", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 18
+            // line 17
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "montantValide", array()), "html", null, true);
             echo " €</td>
                         <td>";
-            // line 19
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "LeEtat", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 20
+            // line 19
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["unFF"], "dateNotif", array()), "d/m/Y"), "html", null, true);
             echo "</td>
-                        <td><a href=\"/visiteur/fiche_frais/modifier/";
-            // line 21
-            echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "id", array()), "html", null, true);
-            echo "\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
                     </tr>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unFF'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 24
+        // line 22
         echo "            </table><br/>
             <a href=\"/visiteur/fiche_frais/ajouter\" class=\"btn btn-outline-light\">AJOUTER NOUVELLE<br/>FICHE FRAIS</a><br/>
         </div>
@@ -101,10 +96,10 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
 
 ";
         
-        $__internal_65c2a05553d24dda698882d2f412866d4a084476418334c21958e6f9e080c175->leave($__internal_65c2a05553d24dda698882d2f412866d4a084476418334c21958e6f9e080c175_prof);
+        $__internal_46951651f3a91aa64493b29f994db3bb84c59c37e75872f27c7092a8ddaa581d->leave($__internal_46951651f3a91aa64493b29f994db3bb84c59c37e75872f27c7092a8ddaa581d_prof);
 
         
-        $__internal_41ae03f6f47ba258621d8560346842d646d438388e3095b4baa331f495b4b67d->leave($__internal_41ae03f6f47ba258621d8560346842d646d438388e3095b4baa331f495b4b67d_prof);
+        $__internal_d90ee121b7c0add29c94b9913a3713f6e785866a32f9b8847122c45c6cca97aa->leave($__internal_d90ee121b7c0add29c94b9913a3713f6e785866a32f9b8847122c45c6cca97aa_prof);
 
     }
 
@@ -120,7 +115,7 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
 
     public function getDebugInfo()
     {
-        return array (  97 => 24,  88 => 21,  84 => 20,  80 => 19,  76 => 18,  72 => 17,  69 => 16,  65 => 15,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  92 => 22,  83 => 19,  79 => 18,  75 => 17,  71 => 16,  68 => 15,  64 => 14,  53 => 6,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -145,7 +140,6 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
                     <th>Montant valide</th>
                     <th>Etat</th>
                     <th>Date de la Notifications</th>
-                    <th>Modifier</th>
                 </tr>
                 {% for unFF in ff %}
                     <tr>
@@ -153,7 +147,6 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
                         <td>{{ unFF.montantValide }} €</td>
                         <td>{{ unFF.LeEtat }}</td>
                         <td>{{ unFF.dateNotif|date('d/m/Y') }}</td>
-                        <td><a href=\"/visiteur/fiche_frais/modifier/{{ unFF.id }}\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>
@@ -161,6 +154,6 @@ class __TwigTemplate_b96d021e95461f852301f22d70a2113bdcec23c5c168758b46b7a11840d
         </div>
     </center>
 
-{% endblock %}", "GSBVisiteurBundle:FicheFrais:listMois.html.twig", "C:\\wamp64\\www\\GSB\\src\\GSB\\VisiteurBundle/Resources/views/FicheFrais/listMois.html.twig");
+{% endblock %}", "GSBVisiteurBundle:FicheFrais:listMois.html.twig", "C:\\wamp64\\www\\GSB-Visiteur\\src\\GSB\\VisiteurBundle/Resources/views/FicheFrais/listMois.html.twig");
     }
 }

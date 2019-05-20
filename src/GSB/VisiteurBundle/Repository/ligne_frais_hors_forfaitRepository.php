@@ -29,6 +29,25 @@ class ligne_frais_hors_forfaitRepository extends \Doctrine\ORM\EntityRepository
         return $result;
     }
 
+    public function getLFHFSynt($mois, $visiteur)
+    {
+        $ss_qb = $this->_em->createQueryBuilder();
+        $ss_qb->select('ff.id')
+            ->from('GSBVisiteurBundle:fiche_frais', 'ff')
+            ->where('ff.idVisiteur = :visiteur')
+            ->andWhere('ff.mois = :mois');
+
+        $qb = $this->_em->createQueryBuilder();
+        $qb->select('lfhf')
+            ->from('GSBVisiteurBundle:ligne_frais_hors_forfait', 'lfhf')
+            ->where($qb->expr()->in('lfhf.ficheFrais', $ss_qb->getDQL()))
+            ->setParameter('visiteur', $visiteur)
+            ->setParameter('mois', $mois);
+        $query = $qb->getQuery();
+        $result = $query->getResult();
+        return $result;
+    }
+
     public function getUnLFHF($id)
     {
         $qb = $this->_em->createQueryBuilder();

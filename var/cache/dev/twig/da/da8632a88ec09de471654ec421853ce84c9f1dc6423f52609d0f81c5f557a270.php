@@ -21,29 +21,29 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_434d556a8a60170ee08f6c7668010822e64863cb5add3b30c3b18fb0074fb799 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_434d556a8a60170ee08f6c7668010822e64863cb5add3b30c3b18fb0074fb799->enter($__internal_434d556a8a60170ee08f6c7668010822e64863cb5add3b30c3b18fb0074fb799_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:index.html.twig"));
+        $__internal_6e175d8d43bbc1a5a01e11f1c244ca9ff554b0c645d17de4f7388805b76c1213 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_6e175d8d43bbc1a5a01e11f1c244ca9ff554b0c645d17de4f7388805b76c1213->enter($__internal_6e175d8d43bbc1a5a01e11f1c244ca9ff554b0c645d17de4f7388805b76c1213_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:index.html.twig"));
 
-        $__internal_610a8d127dcd1a3a993079d3523d7392b5a45b4312c293da29befbaf2df70e40 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_610a8d127dcd1a3a993079d3523d7392b5a45b4312c293da29befbaf2df70e40->enter($__internal_610a8d127dcd1a3a993079d3523d7392b5a45b4312c293da29befbaf2df70e40_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:index.html.twig"));
+        $__internal_946c54624dd60932a73d56373743d51082a675f56c3ff1cb5bec90c75fe43227 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_946c54624dd60932a73d56373743d51082a675f56c3ff1cb5bec90c75fe43227->enter($__internal_946c54624dd60932a73d56373743d51082a675f56c3ff1cb5bec90c75fe43227_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:FicheFrais:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_434d556a8a60170ee08f6c7668010822e64863cb5add3b30c3b18fb0074fb799->leave($__internal_434d556a8a60170ee08f6c7668010822e64863cb5add3b30c3b18fb0074fb799_prof);
+        $__internal_6e175d8d43bbc1a5a01e11f1c244ca9ff554b0c645d17de4f7388805b76c1213->leave($__internal_6e175d8d43bbc1a5a01e11f1c244ca9ff554b0c645d17de4f7388805b76c1213_prof);
 
         
-        $__internal_610a8d127dcd1a3a993079d3523d7392b5a45b4312c293da29befbaf2df70e40->leave($__internal_610a8d127dcd1a3a993079d3523d7392b5a45b4312c293da29befbaf2df70e40_prof);
+        $__internal_946c54624dd60932a73d56373743d51082a675f56c3ff1cb5bec90c75fe43227->leave($__internal_946c54624dd60932a73d56373743d51082a675f56c3ff1cb5bec90c75fe43227_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_acfe5eb1ba86f31f0375cc63918fde6f1f729e4feec306d0c800f1c3673d38c6 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_acfe5eb1ba86f31f0375cc63918fde6f1f729e4feec306d0c800f1c3673d38c6->enter($__internal_acfe5eb1ba86f31f0375cc63918fde6f1f729e4feec306d0c800f1c3673d38c6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_f9f03b5087c48fd5e413f9fe9be9b9f49ad1537c21f3cb2b5621f04adc574008 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_f9f03b5087c48fd5e413f9fe9be9b9f49ad1537c21f3cb2b5621f04adc574008->enter($__internal_f9f03b5087c48fd5e413f9fe9be9b9f49ad1537c21f3cb2b5621f04adc574008_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_5cc61f80e02c7b791270212727de14f01986918da93c7a09aaf70edc4e68a175 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5cc61f80e02c7b791270212727de14f01986918da93c7a09aaf70edc4e68a175->enter($__internal_5cc61f80e02c7b791270212727de14f01986918da93c7a09aaf70edc4e68a175_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1f733bd8f14b82440f0ac78fdbeb8e4ef882c769d2bea2ebb6322c5e3ac5dc53 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1f733bd8f14b82440f0ac78fdbeb8e4ef882c769d2bea2ebb6322c5e3ac5dc53->enter($__internal_1f733bd8f14b82440f0ac78fdbeb8e4ef882c769d2bea2ebb6322c5e3ac5dc53_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <center>
@@ -56,46 +56,41 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
                     <th>Montant valide</th>
                     <th>Etat</th>
                     <th>Date de la Notifications</th>
-                    <th>Modifier</th>
                 </tr>
                 ";
-        // line 16
+        // line 15
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["ff"] ?? $this->getContext($context, "ff")));
         foreach ($context['_seq'] as $context["_key"] => $context["unFF"]) {
-            // line 17
+            // line 16
             echo "                    <tr>
                         <td>";
-            // line 18
+            // line 17
             echo twig_escape_filter($this->env, $this->getAttribute(($context["mois"] ?? $this->getContext($context, "mois")), ($this->getAttribute($context["unFF"], "mois", array()) - 1), array(), "array"), "html", null, true);
             echo "</td>
                         <td>";
-            // line 19
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "nbJustificatifs", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 20
+            // line 19
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "montantValide", array()), "html", null, true);
             echo " €</td>
                         <td>";
-            // line 21
+            // line 20
             echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "LeEtat", array()), "html", null, true);
             echo "</td>
                         <td>";
-            // line 22
+            // line 21
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["unFF"], "dateNotif", array()), "d/m/Y"), "html", null, true);
             echo "</td>
-                        <td><a href=\"/visiteur/fiche_frais/modifier/";
-            // line 23
-            echo twig_escape_filter($this->env, $this->getAttribute($context["unFF"], "id", array()), "html", null, true);
-            echo "\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
                     </tr>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['unFF'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 24
         echo "            </table><br/>
             <a href=\"/visiteur/fiche_frais/ajouter\" class=\"btn btn-outline-light\">AJOUTER NOUVELLE<br/>FICHE FRAIS</a><br/>
         </div>
@@ -103,10 +98,10 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
 
 ";
         
-        $__internal_5cc61f80e02c7b791270212727de14f01986918da93c7a09aaf70edc4e68a175->leave($__internal_5cc61f80e02c7b791270212727de14f01986918da93c7a09aaf70edc4e68a175_prof);
+        $__internal_1f733bd8f14b82440f0ac78fdbeb8e4ef882c769d2bea2ebb6322c5e3ac5dc53->leave($__internal_1f733bd8f14b82440f0ac78fdbeb8e4ef882c769d2bea2ebb6322c5e3ac5dc53_prof);
 
         
-        $__internal_acfe5eb1ba86f31f0375cc63918fde6f1f729e4feec306d0c800f1c3673d38c6->leave($__internal_acfe5eb1ba86f31f0375cc63918fde6f1f729e4feec306d0c800f1c3673d38c6_prof);
+        $__internal_f9f03b5087c48fd5e413f9fe9be9b9f49ad1537c21f3cb2b5621f04adc574008->leave($__internal_f9f03b5087c48fd5e413f9fe9be9b9f49ad1537c21f3cb2b5621f04adc574008_prof);
 
     }
 
@@ -122,7 +117,7 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
 
     public function getDebugInfo()
     {
-        return array (  99 => 26,  90 => 23,  86 => 22,  82 => 21,  78 => 20,  74 => 19,  70 => 18,  67 => 17,  63 => 16,  49 => 4,  40 => 3,  11 => 1,);
+        return array (  94 => 24,  85 => 21,  81 => 20,  77 => 19,  73 => 18,  69 => 17,  66 => 16,  62 => 15,  49 => 4,  40 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -148,7 +143,6 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
                     <th>Montant valide</th>
                     <th>Etat</th>
                     <th>Date de la Notifications</th>
-                    <th>Modifier</th>
                 </tr>
                 {% for unFF in ff %}
                     <tr>
@@ -157,7 +151,6 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
                         <td>{{ unFF.montantValide }} €</td>
                         <td>{{ unFF.LeEtat }}</td>
                         <td>{{ unFF.dateNotif|date('d/m/Y') }}</td>
-                        <td><a href=\"/visiteur/fiche_frais/modifier/{{ unFF.id }}\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>
@@ -165,6 +158,6 @@ class __TwigTemplate_9d92f95ce0d065dfd6e91cfa9605f42279b0801106527a152388f07d7c0
         </div>
     </center>
 
-{% endblock %}", "GSBVisiteurBundle:FicheFrais:index.html.twig", "C:\\wamp64\\www\\GSB\\src\\GSB\\VisiteurBundle/Resources/views/FicheFrais/index.html.twig");
+{% endblock %}", "GSBVisiteurBundle:FicheFrais:index.html.twig", "C:\\wamp64\\www\\GSB-Visiteur\\src\\GSB\\VisiteurBundle/Resources/views/FicheFrais/index.html.twig");
     }
 }

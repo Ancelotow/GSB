@@ -34,6 +34,14 @@ gsb_visiteur_fiche_frais-add:
   path:     /visiteur/fiche_frais/ajouter
   defaults: { _controller: GSBVisiteurBundle:FicheFrais:add }
 
+gsb_visiteur_fiche_frais-synthese-mois:
+  path:     /visiteur/fiche_frais/synthese
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:syntheseMois }
+
+gsb_visiteur_fiche_frais-synthese:
+  path:     /visiteur/fiche_frais/synthese/{mois}
+  defaults: { _controller: GSBVisiteurBundle:FicheFrais:synthese }
+
 gsb_visiteur_fiche_frais-listMois:
   path:     /visiteur/fiche_frais/lister/mois/{mois}
   defaults: { _controller: GSBVisiteurBundle:FicheFrais:listMois }

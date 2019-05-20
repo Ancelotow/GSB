@@ -211,6 +211,19 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                     }
 
+                    elseif (0 === strpos($pathinfo, '/visiteur/fiche_frais/synthese')) {
+                        // gsb_visiteur_fiche_frais-synthese-mois
+                        if ('/visiteur/fiche_frais/synthese' === $pathinfo) {
+                            return array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::syntheseMoisAction',  '_route' => 'gsb_visiteur_fiche_frais-synthese-mois',);
+                        }
+
+                        // gsb_visiteur_fiche_frais-synthese
+                        if (preg_match('#^/visiteur/fiche_frais/synthese/(?P<mois>[^/]++)$#s', $pathinfo, $matches)) {
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_fiche_frais-synthese')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::syntheseAction',));
+                        }
+
+                    }
+
                     // gsb_visiteur_fiche_frais-listMois
                     if (0 === strpos($pathinfo, '/visiteur/fiche_frais/lister/mois') && preg_match('#^/visiteur/fiche_frais/lister/mois/(?P<mois>[^/]++)$#s', $pathinfo, $matches)) {
                         return $this->mergeDefaults(array_replace($matches, array('_route' => 'gsb_visiteur_fiche_frais-listMois')), array (  '_controller' => 'GSB\\VisiteurBundle\\Controller\\FicheFraisController::listMoisAction',));

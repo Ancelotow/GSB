@@ -21,34 +21,34 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8f93329ee0a4efb232d46f77f807e398fff037c9fde45b70ac8d34e2e23f90a9 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_8f93329ee0a4efb232d46f77f807e398fff037c9fde45b70ac8d34e2e23f90a9->enter($__internal_8f93329ee0a4efb232d46f77f807e398fff037c9fde45b70ac8d34e2e23f90a9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig"));
+        $__internal_4da786cfd3657160b85f7e076187fd4dc7f51c63de7b46ec84bc9ec3d7b5b050 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4da786cfd3657160b85f7e076187fd4dc7f51c63de7b46ec84bc9ec3d7b5b050->enter($__internal_4da786cfd3657160b85f7e076187fd4dc7f51c63de7b46ec84bc9ec3d7b5b050_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig"));
 
-        $__internal_e2c796699dc458c5e646caa082ae1a426fe501de5fc50f01f5c4b5f3ca5c08ec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e2c796699dc458c5e646caa082ae1a426fe501de5fc50f01f5c4b5f3ca5c08ec->enter($__internal_e2c796699dc458c5e646caa082ae1a426fe501de5fc50f01f5c4b5f3ca5c08ec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig"));
+        $__internal_e58e03baf4d99970448f3295351311950a7a9c1323b5c813f1346e886585535a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e58e03baf4d99970448f3295351311950a7a9c1323b5c813f1346e886585535a->enter($__internal_e58e03baf4d99970448f3295351311950a7a9c1323b5c813f1346e886585535a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8f93329ee0a4efb232d46f77f807e398fff037c9fde45b70ac8d34e2e23f90a9->leave($__internal_8f93329ee0a4efb232d46f77f807e398fff037c9fde45b70ac8d34e2e23f90a9_prof);
+        $__internal_4da786cfd3657160b85f7e076187fd4dc7f51c63de7b46ec84bc9ec3d7b5b050->leave($__internal_4da786cfd3657160b85f7e076187fd4dc7f51c63de7b46ec84bc9ec3d7b5b050_prof);
 
         
-        $__internal_e2c796699dc458c5e646caa082ae1a426fe501de5fc50f01f5c4b5f3ca5c08ec->leave($__internal_e2c796699dc458c5e646caa082ae1a426fe501de5fc50f01f5c4b5f3ca5c08ec_prof);
+        $__internal_e58e03baf4d99970448f3295351311950a7a9c1323b5c813f1346e886585535a->leave($__internal_e58e03baf4d99970448f3295351311950a7a9c1323b5c813f1346e886585535a_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_e4db1d539d7462ec8e27cf5326f0b5ba69ca8ec1050db9b8c1604661c5129e9c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e4db1d539d7462ec8e27cf5326f0b5ba69ca8ec1050db9b8c1604661c5129e9c->enter($__internal_e4db1d539d7462ec8e27cf5326f0b5ba69ca8ec1050db9b8c1604661c5129e9c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4e5047d8fa5dc90739341ef657520b0dd5441414b48f85e402795bdd45585523 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4e5047d8fa5dc90739341ef657520b0dd5441414b48f85e402795bdd45585523->enter($__internal_4e5047d8fa5dc90739341ef657520b0dd5441414b48f85e402795bdd45585523_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_e44e4975ab93166a13f75520c84e8c06049e37995809da2514609d5a55f6fc96 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_e44e4975ab93166a13f75520c84e8c06049e37995809da2514609d5a55f6fc96->enter($__internal_e44e4975ab93166a13f75520c84e8c06049e37995809da2514609d5a55f6fc96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_9058e4751c807e80a45578139d2c19be863ecf0284d5fc6a6c504b16b71224a5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_9058e4751c807e80a45578139d2c19be863ecf0284d5fc6a6c504b16b71224a5->enter($__internal_9058e4751c807e80a45578139d2c19be863ecf0284d5fc6a6c504b16b71224a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <center>
         <div class=\"container\">
-            <h3>Liste des Lignes Frais Forfaits</h3><br/>
+            <h3>Liste des Lignes Frais Hors Forfaits</h3><br/>
             <table class=\"table table-dark table-hover\">
                 <tr>
                     <th>Fiche frais</th>
@@ -85,7 +85,7 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
             // line 22
             echo twig_escape_filter($this->env, $this->getAttribute($context["unLFHF"], "id", array()), "html", null, true);
             echo "\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
-                        <td><a href=\"/visiteur/ligne_frais_hors_forfait/supprimer/";
+                        <td><a href=\"/visiteur/ligne_frais_hors_forfait/supprimer/verif/";
             // line 23
             echo twig_escape_filter($this->env, $this->getAttribute($context["unLFHF"], "id", array()), "html", null, true);
             echo "\" class=\"btn btn-outline-danger\">SUPPRIMER</a></td>
@@ -103,10 +103,10 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
 
 ";
         
-        $__internal_e44e4975ab93166a13f75520c84e8c06049e37995809da2514609d5a55f6fc96->leave($__internal_e44e4975ab93166a13f75520c84e8c06049e37995809da2514609d5a55f6fc96_prof);
+        $__internal_9058e4751c807e80a45578139d2c19be863ecf0284d5fc6a6c504b16b71224a5->leave($__internal_9058e4751c807e80a45578139d2c19be863ecf0284d5fc6a6c504b16b71224a5_prof);
 
         
-        $__internal_e4db1d539d7462ec8e27cf5326f0b5ba69ca8ec1050db9b8c1604661c5129e9c->leave($__internal_e4db1d539d7462ec8e27cf5326f0b5ba69ca8ec1050db9b8c1604661c5129e9c_prof);
+        $__internal_4e5047d8fa5dc90739341ef657520b0dd5441414b48f85e402795bdd45585523->leave($__internal_4e5047d8fa5dc90739341ef657520b0dd5441414b48f85e402795bdd45585523_prof);
 
     }
 
@@ -140,7 +140,7 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
 {% block body %}
     <center>
         <div class=\"container\">
-            <h3>Liste des Lignes Frais Forfaits</h3><br/>
+            <h3>Liste des Lignes Frais Hors Forfaits</h3><br/>
             <table class=\"table table-dark table-hover\">
                 <tr>
                     <th>Fiche frais</th>
@@ -157,7 +157,7 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
                         <td>{{ unLFHF.montant }} €</td>
                         <td>{{ unLFHF.libelle }}</td>
                         <td><a href=\"/visiteur/ligne_frais_hors_forfait/modifier/{{ unLFHF.id }}\" class=\"btn btn-outline-primary\">MODIFIER</a></td>
-                        <td><a href=\"/visiteur/ligne_frais_hors_forfait/supprimer/{{ unLFHF.id }}\" class=\"btn btn-outline-danger\">SUPPRIMER</a></td>
+                        <td><a href=\"/visiteur/ligne_frais_hors_forfait/supprimer/verif/{{ unLFHF.id }}\" class=\"btn btn-outline-danger\">SUPPRIMER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>
@@ -165,6 +165,6 @@ class __TwigTemplate_5b0d1b49d35692f213974b006664deace131642b14fa799e4f2dd1a82c9
         </div>
     </center>
 
-{% endblock %}", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig", "C:\\wamp64\\www\\GSB\\src\\GSB\\VisiteurBundle/Resources/views/LigneFraisHorsForfait/index.html.twig");
+{% endblock %}", "GSBVisiteurBundle:LigneFraisHorsForfait:index.html.twig", "C:\\wamp64\\www\\GSB-Visiteur\\src\\GSB\\VisiteurBundle/Resources/views/LigneFraisHorsForfait/index.html.twig");
     }
 }

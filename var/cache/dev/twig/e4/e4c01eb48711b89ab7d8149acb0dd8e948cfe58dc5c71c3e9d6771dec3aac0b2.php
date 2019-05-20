@@ -21,29 +21,29 @@ class __TwigTemplate_5f41e2885c682f38c1dff35c5fbdac5be82cc1981eaacb221abc49feaf9
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9267d6396158c24f9be78207d08666bec8caba33b86f6bd3b2018124915d9715 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_9267d6396158c24f9be78207d08666bec8caba33b86f6bd3b2018124915d9715->enter($__internal_9267d6396158c24f9be78207d08666bec8caba33b86f6bd3b2018124915d9715_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBAccueilBundle:Default:index.html.twig"));
+        $__internal_291f2644fd16df97af25323b019d0225329d2150a1c187acaaef485014b73f01 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_291f2644fd16df97af25323b019d0225329d2150a1c187acaaef485014b73f01->enter($__internal_291f2644fd16df97af25323b019d0225329d2150a1c187acaaef485014b73f01_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBAccueilBundle:Default:index.html.twig"));
 
-        $__internal_7fac7738fa19d7fc17f09445532610ed4b8d5c8e8aefc84b211cdf6b1a4c35e6 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7fac7738fa19d7fc17f09445532610ed4b8d5c8e8aefc84b211cdf6b1a4c35e6->enter($__internal_7fac7738fa19d7fc17f09445532610ed4b8d5c8e8aefc84b211cdf6b1a4c35e6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBAccueilBundle:Default:index.html.twig"));
+        $__internal_c08159573fc6ba18d4f603fb378180b9809b5120a35b6fdba9522ebd65d3d395 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c08159573fc6ba18d4f603fb378180b9809b5120a35b6fdba9522ebd65d3d395->enter($__internal_c08159573fc6ba18d4f603fb378180b9809b5120a35b6fdba9522ebd65d3d395_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "GSBAccueilBundle:Default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_9267d6396158c24f9be78207d08666bec8caba33b86f6bd3b2018124915d9715->leave($__internal_9267d6396158c24f9be78207d08666bec8caba33b86f6bd3b2018124915d9715_prof);
+        $__internal_291f2644fd16df97af25323b019d0225329d2150a1c187acaaef485014b73f01->leave($__internal_291f2644fd16df97af25323b019d0225329d2150a1c187acaaef485014b73f01_prof);
 
         
-        $__internal_7fac7738fa19d7fc17f09445532610ed4b8d5c8e8aefc84b211cdf6b1a4c35e6->leave($__internal_7fac7738fa19d7fc17f09445532610ed4b8d5c8e8aefc84b211cdf6b1a4c35e6_prof);
+        $__internal_c08159573fc6ba18d4f603fb378180b9809b5120a35b6fdba9522ebd65d3d395->leave($__internal_c08159573fc6ba18d4f603fb378180b9809b5120a35b6fdba9522ebd65d3d395_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_57f07a4fed0f61955886fe97820c7147c03ec69a0396dc944d85ef67b40cbf03 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_57f07a4fed0f61955886fe97820c7147c03ec69a0396dc944d85ef67b40cbf03->enter($__internal_57f07a4fed0f61955886fe97820c7147c03ec69a0396dc944d85ef67b40cbf03_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_4e841df6c666035ee7d29ca559e4e6f0b54dd3c22552734622f86275722b8d71 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4e841df6c666035ee7d29ca559e4e6f0b54dd3c22552734622f86275722b8d71->enter($__internal_4e841df6c666035ee7d29ca559e4e6f0b54dd3c22552734622f86275722b8d71_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_6142bcd65de3d6ff6243fcdda33459abe0230d1fb2a59327595cf8b1c7a3dd62 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6142bcd65de3d6ff6243fcdda33459abe0230d1fb2a59327595cf8b1c7a3dd62->enter($__internal_6142bcd65de3d6ff6243fcdda33459abe0230d1fb2a59327595cf8b1c7a3dd62_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_68f0c898a4c42cc9a338fdbeb862b124425e4bfa0198ed9e8da84970672a6260 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_68f0c898a4c42cc9a338fdbeb862b124425e4bfa0198ed9e8da84970672a6260->enter($__internal_68f0c898a4c42cc9a338fdbeb862b124425e4bfa0198ed9e8da84970672a6260_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "    <center>
@@ -55,10 +55,10 @@ class __TwigTemplate_5f41e2885c682f38c1dff35c5fbdac5be82cc1981eaacb221abc49feaf9
     </center>
 ";
         
-        $__internal_6142bcd65de3d6ff6243fcdda33459abe0230d1fb2a59327595cf8b1c7a3dd62->leave($__internal_6142bcd65de3d6ff6243fcdda33459abe0230d1fb2a59327595cf8b1c7a3dd62_prof);
+        $__internal_68f0c898a4c42cc9a338fdbeb862b124425e4bfa0198ed9e8da84970672a6260->leave($__internal_68f0c898a4c42cc9a338fdbeb862b124425e4bfa0198ed9e8da84970672a6260_prof);
 
         
-        $__internal_57f07a4fed0f61955886fe97820c7147c03ec69a0396dc944d85ef67b40cbf03->leave($__internal_57f07a4fed0f61955886fe97820c7147c03ec69a0396dc944d85ef67b40cbf03_prof);
+        $__internal_4e841df6c666035ee7d29ca559e4e6f0b54dd3c22552734622f86275722b8d71->leave($__internal_4e841df6c666035ee7d29ca559e4e6f0b54dd3c22552734622f86275722b8d71_prof);
 
     }
 
@@ -97,6 +97,6 @@ class __TwigTemplate_5f41e2885c682f38c1dff35c5fbdac5be82cc1981eaacb221abc49feaf9
         <a href=\"/inscription/visiteur/\" class=\"btn btn-warning\">INSCRIPTION VISITEUR</a><br/><br/>
         <a href=\"#\" class=\"btn btn-dark\">INSCRIPTION COMPTABLE</a>
     </center>
-{% endblock %}", "GSBAccueilBundle:Default:index.html.twig", "C:\\wamp64\\www\\GSB\\src\\GSB\\AccueilBundle/Resources/views/Default/index.html.twig");
+{% endblock %}", "GSBAccueilBundle:Default:index.html.twig", "C:\\wamp64\\www\\GSB-Visiteur\\src\\GSB\\AccueilBundle/Resources/views/Default/index.html.twig");
     }
 }

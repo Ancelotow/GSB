@@ -69,11 +69,10 @@ class fiche_fraisRepository extends \Doctrine\ORM\EntityRepository
             ->from('GSBVisiteurBundle:fiche_frais', 'ff')
             ->where('ff.idVisiteur = :id')
             ->andWhere('ff.mois = :mois')
-            ->orderBy('ff.dateNotif')
             ->setParameter('id', $id)
             ->setParameter('mois', $mois);
         $query = $qb->getQuery();
-        $result = $query->getResult();
+        $result = $query->getOneOrNullResult();
         return $result;
     }
 
